@@ -4,9 +4,9 @@
   --dark-grayish-red: hsl(0, 6%, 24%);
   --btn-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   --background-gradient: linear-gradient(
-    -60deg,
-    hsl(0, 0%, 100%),
-    hsl(0, 100%, 98%)
+    135deg,
+    hsl(0, 0%, 99.5%),
+    hsl(0, 100%, 99%)
   );
 }
 
@@ -34,8 +34,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: var(--background-gradient);
+  background-image: url("images/bg-pattern-desktop.svg"),
+    var(--background-gradient);
   background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100% 100%;
 }
 
 main {
@@ -49,8 +52,6 @@ main {
 .message {
   max-width: 83rem;
   height: 100%;
-  background-image: url("images/bg-pattern-desktop.svg");
-  background-repeat: no-repeat;
   padding: 6.5rem 16.5rem;
 }
 
